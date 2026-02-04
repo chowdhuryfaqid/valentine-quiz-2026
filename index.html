@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For My Valentine 💘</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-hearts" aria-hidden="true"></div>
+
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">💘</div>
+        <div>
+          <h1 id="title">Memory Lane Quiz</h1>
+          <p id="subtitle">A little game, a lot of love.</p>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-meta">
+          <span id="stepText">1 / 11</span>
+          <span id="scoreText">Score: 0</span>
+        </div>
+        <div class="progress-track" aria-label="progress">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="photo-wrap">
+        <img id="photo" alt="A memory" />
+        <div id="photoOverlay" class="photo-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="content">
+        <h2 id="question" class="question">Loading…</h2>
+
+        <div id="choices" class="choices" role="group" aria-label="answer choices">
+          <!-- buttons injected -->
+        </div>
+
+        <div id="feedback" class="feedback" aria-live="polite"></div>
+
+        <div id="memoryBox" class="memory hidden">
+          <h3>Memory 💞</h3>
+          <p id="memoryText"></p>
+        </div>
+
+        <div class="actions">
+          <button id="nextBtn" class="btn primary hidden">Next ➜</button>
+          <button id="restartBtn" class="btn hidden">Restart</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Made with ❤️</span>
+    </footer>
+  </main>
+
+  <canvas id="confetti" class="confetti" aria-hidden="true"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
